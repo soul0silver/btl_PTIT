@@ -13,11 +13,11 @@ Toàn bộ logic nghiệp vụ được triển khai bằng C++ với file-based
 ## 2. Thành Viên Tham Gia
 
 - **K24DTCN585 - Nguyễn Đạt**
-  - Phụ trách: Đăng ký, đăng nhập, transaction log
+  - Phụ trách: Lưu trữ dữ liệu người dùng(mật khẩu, tên đăng nhập), transaction log, OTP Manager
 - **K24DTCN596 - Ngô Quang Hiếu**
   - Phụ trách: Storage (sao lưu & phục hồi)
 - **K24DTCN621 - Hồ Trí Phú**
-  - Phụ trách: System & OTP Manager
+  - Phụ trách: System (Hệ thống, giao diện)
 
 ## 3. Phân Tích & Đặc Tả Chức Năng
 
