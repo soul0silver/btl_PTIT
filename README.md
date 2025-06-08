@@ -1,4 +1,4 @@
-# Hệ Thống Đăng Nhập, Đăng Ký và Quản Lý Ví Điểm Thưởng
+# Hệ thống đăng nhập và đăng ký tài khoản và quản lý ví điểm thưởng
 
 ## 1. Giới Thiệu Dự Án
 
@@ -46,6 +46,7 @@ Toàn bộ logic nghiệp vụ được triển khai bằng C++ với file-based
    git clone <https://github.com/soul0silver/btl_PTIT.git>
 3. **Biên dịch**
     g++ user.cpp otp_manager.cpp storage.cpp transaction_log.cpp system.cpp main.cpp -o wallet_app
+   
 ## 5. Hướng Dẫn Chạy & Sử Dụng
 1. **Chạy ứng dụng**
    ./wallet_app
