@@ -21,7 +21,22 @@ Toàn bộ logic nghiệp vụ được triển khai bằng C++ với file-based
 
 ## 3. Phân Tích & Đặc Tả Chức Năng
 
-Chi tiết phân tích, quy trình nghiệp vụ và đặc tả chức năng đã được mô tả đầy đủ trong tài liệu dự án.
+1. **Đăng ký & Tạo tài khoản**
+   - Tự sinh hoặc nhập mật khẩu
+   - Khởi tạo ví với số dư ban đầu (1000 điểm)
+   - Ghi lại transaction log (nếu có)  
+2. **Đăng nhập & Quản lý người dùng**
+   - Xác thực bằng mật khẩu (hash)
+   - Yêu cầu đổi mật khẩu tạm nếu sử dụng mật khẩu tự sinh
+   - Phân quyền user thường và admin  
+3. **Quản lý ví & Chuyển điểm**
+   - Kiểm tra số dư, OTP xác thực
+   - Atomic transfer + ghi log vào file riêng của ví nguồn và ví đích  
+4. **Sao lưu & Phục hồi dữ liệu**
+   - Backup & restore file `users.dat`  
+5. **Transaction Log**
+   - Ghi log mỗi giao dịch vào `trans_<walletId>.log`
+   - Cho phép xem lịch sử ví riêng  
 
 ## 4. Cài Đặt & Biên Dịch
 
